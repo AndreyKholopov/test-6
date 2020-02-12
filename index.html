@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Test №6</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<h1>Критические значения параметров метеорологических явлений</h1>
+		
+		<div class="main-descr">
+			<p>Сами по себе атмосферные осадки и изменения температур не 
+				несут опасности, значение имеет то, насколько они могут 
+				усилиться. Когда мелкий дождь становится затяжным или 
+				превращается в сильный дождь (ливень), возникает опасность 
+				подтопления. Усиление, поначалу легкого ветерка до шквалистого 
+				ветра повышает вероятность обрыва проводов. То же относится и к 
+				другим метеорологическим явлениям. С помощью переключателя «усильте»
+				то или иное явление природы и посмотрите, при каких критических 
+				параметрах оно становятся опасным.</p>
+
+			<span>*Сдвиньте переключатель под иконкой, чтобы увидеть критические параметры.</span>
+		</div>
+	</main>
+
+	<section class="all-blocks">
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl1" tumbl='off'>Ветер</h3>
+				<h3 class="tumbl1" id="tumbl-on" tumbl='on'>Сильный ветер (шквалистый)</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl1" tumbl='off' src="./images/1_off.png" alt="img-tumbl-off">
+					<img class="tumbl1" id="tumbl-on" tumbl='on' src="./images/1_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl1" tumbl='off'></p>
+				<p class="tumbl1" id="tumbl-on" tumbl='on'>Скорость порывов от 25м/c и более.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(1)" class="checkbox1">
+					<i></i>
+				</label>
+			</div>
+		</div>
+		
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl2" tumbl='off'>Дождь</h3>
+				<h3 class="tumbl2" id="tumbl-on" tumbl='on'>Сильный дождь (Ливень)</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl2" tumbl='off' src="./images/2_off.png" alt="img-tumbl-off">
+					<img class="tumbl2" id="tumbl-on" tumbl='on' src="./images/2_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl2" tumbl='off'></p>
+				<p class="tumbl2" id="tumbl-on" tumbl='on'>Кол-во осадков 100 мм и более, в период менее чем за 12 часов.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(2)" class="checkbox2">
+					<i></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl3" tumbl='off'>Снег</h3>
+				<h3 class="tumbl3" id="tumbl-on" tumbl='on'>Сильный снег</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl3" tumbl='off' src="./images/3_off.png" alt="img-tumbl-off">
+					<img class="tumbl3" id="tumbl-on" tumbl='on' src="./images/3_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl3" tumbl='off'></p>
+				<p class="tumbl3" id="tumbl-on" tumbl='on'>Кол-во осадков 20 мм и более, в период менее чем за 12 часов.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(3)" class="checkbox3">
+					<i></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl4" tumbl='off'>Метель </h3>
+				<h3 class="tumbl4" id="tumbl-on" tumbl='on'>Сильная Метель</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl4" tumbl='off' src="./images/4_off.png" alt="img-tumbl-off">
+					<img class="tumbl4" id="tumbl-on" tumbl='on' src="./images/4_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl4" tumbl='off'></p>
+				<p class="tumbl4" id="tumbl-on" tumbl='on'>При ветре 20 м/c в течение суток с выпадением снега.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(4)" class="checkbox4">
+					<i></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl5" tumbl='off'>Град</h3>
+				<h3 class="tumbl5" id="tumbl-on" tumbl='on'>Крупный Град</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl5" tumbl='off' src="./images/5_off.png" alt="img-tumbl-off">
+					<img class="tumbl5" id="tumbl-on" tumbl='on' src="./images/5_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl5" tumbl='off'></p>
+				<p class="tumbl5" id="tumbl-on" tumbl='on'>Диаметр градин 20 мм и более.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(5)" class="checkbox5">
+					<i></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl6" tumbl='off'>Гололед</h3>
+				<h3 class="tumbl6" id="tumbl-on" tumbl='on'>Сильный Гололед</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl6" tumbl='off' src="./images/6_off.png" alt="img-tumbl-off">
+					<img class="tumbl6" id="tumbl-on" tumbl='on' src="./images/6_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl6" tumbl='off'></p>
+				<p class="tumbl6" id="tumbl-on" tumbl='on'>Диаметр отложений на проводах 20 мм и более.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(6)" class="checkbox6">
+					<i></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="block-header">
+				<h3 class="tumbl7" tumbl='off'>Мороз</h3>
+				<h3 class="tumbl7" id="tumbl-on" tumbl='on'>Сильный Мороз</h3>
+			</div>
+
+			<div class="block-main">
+				<div class="block-main-img">
+					<img class="tumbl7" tumbl='off' src="./images/7_off.png" alt="img-tumbl-off">
+					<img class="tumbl7" id="tumbl-on" tumbl='on' src="./images/7_on.png" alt="img-tumbl-on">
+				</div>
+
+				<p class="tumbl7" tumbl='off'></p>
+				<p class="tumbl7" id="tumbl-on" tumbl='on'>Температура воздуха у поверхности земли - 30°C и ниже для Европейской части РФ.</p>
+			</div>
+
+			<div class="switch-box">
+				<label class="form-switch">
+					<input type="checkbox" onchange="changeCheck(7)" class="checkbox7">
+					<i></i>
+				</label>
+			</div>
+		</div>
+	</section>
+	
+	<script src="js/main.js"></script>
+</body>
+</html>
