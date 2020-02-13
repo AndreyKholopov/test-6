@@ -1,8 +1,8 @@
 "use strict";
 
-const changeCheck = item => {
-   const checkbox = document.querySelector(`.checkbox${item}`);
-   const content = document.querySelectorAll(`.tumbl${item}`);
+function changeCheck (item) {
+   const checkbox = document.querySelector('.checkbox'+item);
+   const content = document.querySelectorAll('.tumbl'+item);
 
    if (checkbox.checked) {
       for (let i = 0; i <= content.length - 1; i++) {
